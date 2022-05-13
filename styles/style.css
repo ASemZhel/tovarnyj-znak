@@ -52,7 +52,7 @@ img {
 }
 
 .section-title {
-	font-size: 40px;
+	font-size: 48px;
 	font-weight: 600;
 	letter-spacing: 0.03em;
 }
@@ -64,7 +64,7 @@ img {
 }
 
 .block-title {
-	font-size: 32px;
+	font-size: 40px;
 	font-weight: 600;
 	letter-spacing: 0.03em;
 }
@@ -212,7 +212,7 @@ img {
 	margin: 0 0 16px 0;
 }
 
-.search__buttons {
+.options__buttons {
 	display: flex;
 	margin: 0 0 16px 0;
 }
@@ -241,23 +241,29 @@ img {
 }
 
 .search__options {
-	border: 2px solid #1E61AA;
-	border-radius: 30px;
-	padding: 40px;
 	margin: 0 0 40px 0;
 }
 
-.search__options .block-title {
+.options__content {
+	border: 2px solid #1E61AA;
+	border-radius: 30px;
+	padding: 40px;
+}
+
+.options__title {
 	color: #1E61AA;
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: 0.03em;
 	margin-bottom: 32px;
 }
 
-.search__categories {
+.options__categories {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.search__category {
+.options__category {
 	position: relative;
 	padding: 0 0 0 48px;
 	width: 30%;
@@ -265,7 +271,7 @@ img {
 	cursor: pointer;
 }
 
-.search__category:before {
+.options__category:before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -281,16 +287,16 @@ img {
 	box-sizing: border-box;
 }
 
-.search__category.selected:before {
+.options__category.selected:before {
 	content: '\f111';
 	color: #F2C415;
 }
 
-.search__form {
+.options__form {
 	display: flex;
 }
 
-.search__form input {
+.options__form input {
 	width: 60%;
 	padding: 12px 16px;
 	font-family: inherit;
@@ -305,12 +311,12 @@ img {
 	transition: .3s;
 }
 
-.search__form input:focus {
+.options__form input:focus {
 	border-color: #F2C415;
 	box-shadow: 0 0 5px #F2C415;
 }
 
-.search__form input::placeholder {
+.options__form input::placeholder {
 	color: #CBCBCB;
 	font-size: 24px;
 	letter-spacing: 0.03em;
@@ -406,4 +412,41 @@ img {
 	font-size: 18px;
 	letter-spacing: 0.03em;
 	line-height: 1.5;
+}
+
+/******** ADVANTAGES ********/
+
+#advantages {
+	background-color: #F3F3F3;
+}
+
+.advantages__title {
+	margin: 0 0 32px 0;
+}
+
+.advantages__wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.advantage {
+	width: 390px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 16px;
+	display: flex;
+	margin: 0 0 16px 0;
+}
+
+.advantage__image {
+	width: 35%;
+	margin: 0 15px 0 0;
+}
+
+.advantage__title {
+	color: #1E61AA;
+	font-size: 20px;
+	letter-spacing: 0.03em;
+	margin: 0 0 8px 0;
 }
