@@ -73,12 +73,12 @@
 			</div>
 			<div class="search__options">
 				<div class="options__buttons">
-					<a class="button toggle-button active" href="">товарные группы</a>
-					<a class="button toggle-button" href="">классы МКТУ</a>
+					<div class="button toggle-button active" data-id="groups">товарные группы</div>
+					<div class="button toggle-button" data-id="mktu-classes">классы МКТУ</div>
 				</div>
 				<div class="options__content">
 					<h4 class="options__title">1. Выберите раздел:</h4>
-					<ul class="options__categories block-text">
+					<ul class="options__categories block-text" id="castom-radio">
 						<li class="options__category selected">Услуги</li>
 						<li class="options__category">Услуги</li>
 						<li class="options__category">Услуги</li>
@@ -89,11 +89,67 @@
 						<li class="options__category">Сладости</li>
 						<li class="options__category">Сладости</li>
 					</ul>
-					<h4 class="options__title">2. Выберите группу товаров:</h4>
-					<form class="options__form">
-						<input type="text" placeholder="Парикмахерская">
-						<button type="submit" class="button button_yellow">Найти</button>
-					</form>
+					<div id="groups" class="toggle-options">
+						<h4 class="options__title">2. Выберите группу товаров:</h4>
+						<form class="options__form">
+							<input type="text" placeholder="Парикмахерская">
+							<button type="submit" class="button button_yellow">Найти</button>
+						</form>
+					</div>
+					<div id="mktu-classes" class="toggle-options hidden">
+						<h4 class="options__title">2. Выберите класс МКТУ:</h4>
+						<form class="options__form">
+							<ul class="options__categories block-text" id="custom-checkbox">
+								<li class="options__category selected">1</li>
+								<li class="options__category">2</li>
+								<li class="options__category">3</li>
+								<li class="options__category">4</li>
+								<li class="options__category">5</li>
+								<li class="options__category">6</li>
+								<li class="options__category">7</li>
+								<li class="options__category">8</li>
+								<li class="options__category">9</li>
+								<li class="options__category">10</li>
+								<li class="options__category">11</li>
+								<li class="options__category">12</li>
+								<li class="options__category">13</li>
+								<li class="options__category">14</li>
+								<li class="options__category">15</li>
+								<li class="options__category">16</li>
+								<li class="options__category">17</li>
+								<li class="options__category">18</li>
+								<li class="options__category">19</li>
+								<li class="options__category">20</li>
+								<li class="options__category">21</li>
+								<li class="options__category">22</li>
+								<li class="options__category">23</li>
+								<li class="options__category">24</li>
+								<li class="options__category">25</li>
+								<li class="options__category">26</li>
+								<li class="options__category">27</li>
+								<li class="options__category">28</li>
+								<li class="options__category">29</li>
+								<li class="options__category">30</li>
+								<li class="options__category">31</li>
+								<li class="options__category">32</li>
+								<li class="options__category">33</li>
+								<li class="options__category">34</li>
+								<li class="options__category">35</li>
+								<li class="options__category">36</li>
+								<li class="options__category">37</li>
+								<li class="options__category">38</li>
+								<li class="options__category">39</li>
+								<li class="options__category">40</li>
+								<li class="options__category">41</li>
+								<li class="options__category">42</li>
+								<li class="options__category">43</li>
+								<li class="options__category">44</li>
+								<li class="options__category">45</li>
+							</ul>
+							<button type="submit" class="button button_yellow options__button">Найти</button>
+						</form>
+					</div>
+					
 				</div>				
 			</div>
 			<div class="signs search__signs">
@@ -205,8 +261,97 @@
 				</picture>
 				<p class="logo__text">Проект БП &laquo;Железно&raquo; биржа товарных знаков</p>
 			</div>
-			<div class="footer__contacts footer__column"></div>
-			<nav class="navigation footer__navigation footer__column">
+			<div class="footer__contacts footer__column">
+				<a class="footer__link phone" href="tel:+70000000000">8 495 104-74-54</a>
+				<a class="footer__link email" href="mailto:info@tovarnyi-znak.ru">info@tovarnyi-znak.ru</a>
+				<div class="social">
+					<a href="" class="social__link telegram">
+						<svg class="svg-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
+							viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+						
+							<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+								<path d="M4575 4721 c-99 -33 -1102 -364 -2230 -736 -1127 -371 -2082 -686
+						-2122 -701 -90 -32 -152 -86 -190 -162 -38 -77 -39 -193 -4 -262 29 -57 85
+						-116 133 -141 20 -10 283 -127 584 -259 301 -132 548 -241 550 -243 2 -2 80
+						-358 173 -791 94 -433 178 -804 188 -824 38 -78 129 -104 208 -59 22 13 230
+						166 462 340 l422 316 488 -399 c268 -220 510 -411 537 -426 64 -35 152 -43
+						231 -19 81 23 173 114 198 195 9 30 220 919 468 1975 495 2107 469 1977 416
+						2081 -54 105 -144 164 -262 171 -64 3 -85 -1 -250 -56z m240 -268 c-4 -16
+						-207 -878 -451 -1917 -244 -1039 -446 -1892 -449 -1894 -3 -3 -13 2 -22 10
+						-10 8 -355 291 -768 628 -412 337 -754 616 -758 620 -4 4 344 375 775 825 431
+						450 793 834 805 854 15 24 23 52 23 82 0 40 -6 53 -38 89 -36 41 -42 44 -98
+						47 l-59 4 -1177 -654 -1176 -654 -562 245 c-308 135 -557 249 -552 254 8 8
+						4478 1486 4501 1487 10 1 11 -6 6 -26z m-1805 -1427 c0 -2 -223 -238 -496
+						-523 -273 -285 -503 -531 -510 -548 -7 -16 -53 -167 -100 -335 -48 -168 -90
+						-308 -94 -313 -6 -7 -202 883 -204 926 -1 13 169 112 699 407 385 214 701 390
+						703 390 1 0 2 -2 2 -4z m-632 -1524 c68 -55 123 -103 123 -107 0 -10 -436
+						-335 -439 -327 -1 4 25 102 58 217 108 374 99 349 118 332 9 -8 72 -59 140
+						-115z" />
+							</g>
+						</svg>
+
+					</a>
+					<a href="" class="social__link youtube">
+						<svg class="svg-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
+							viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+						
+							<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+								<path d="M512 4235 c-188 -41 -359 -182 -448 -368 -66 -139 -64 -97 -64 -1307
+						0 -1210 -2 -1168 64 -1307 90 -188 261 -327 452 -368 104 -22 3984 -22 4088 0
+						241 51 448 262 501 510 22 104 22 2226 0 2330 -53 248 -260 459 -501 510 -100
+						21 -3995 21 -4092 0z m4033 -299 c72 -19 112 -42 164 -95 57 -57 89 -122 102
+						-203 6 -39 9 -472 7 -1123 -3 -982 -4 -1063 -21 -1105 -38 -98 -138 -194 -230
+						-222 -61 -19 -3953 -19 -4014 0 -92 28 -192 124 -230 222 -17 42 -18 123 -21
+						1105 -2 651 1 1084 7 1123 13 81 45 146 102 203 51 52 92 76 159 95 68 19
+						3904 19 3975 0z" />
+								<path d="M1981 3539 c-45 -9 -82 -38 -103 -80 -17 -32 -18 -95 -18 -899 0
+						-804 1 -867 18 -899 32 -63 104 -96 170 -78 47 12 1469 833 1510 871 18 17 37
+						47 43 68 14 52 -3 106 -43 144 -41 38 -1463 859 -1510 871 -18 5 -48 6 -67 2z
+						m682 -694 c268 -154 486 -282 486 -285 0 -4 -958 -559 -980 -568 -5 -2 -9 254
+						-9 568 0 314 4 570 9 568 4 -1 227 -129 494 -283z" />
+							</g>
+						</svg>
+
+					</a>
+					<a href="" class="social__link whatsapp">
+						<svg class="svg-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
+							viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+							<metadata>
+								Created by potrace 1.16, written by Peter Selinger 2001-2019
+							</metadata>
+							<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+								<path d="M2240 5105 c-673 -86 -1270 -424 -1691 -955 -273 -343 -453 -758
+						-525 -1210 -29 -177 -26 -606 4 -784 50 -291 120 -505 249 -761 l65 -131 -136
+						-509 c-105 -390 -135 -518 -131 -546 8 -48 38 -95 72 -113 68 -34 75 -33 607
+						109 l509 137 141 -71 c251 -125 498 -204 776 -248 166 -26 598 -26 760 1 993
+						160 1789 847 2074 1790 83 272 111 496 103 820 -6 275 -31 432 -104 676 -122
+						406 -328 746 -642 1061 -402 402 -842 626 -1421 725 -131 22 -565 28 -710 9z
+						m670 -329 c239 -41 417 -99 635 -206 371 -182 655 -431 888 -778 72 -108 205
+						-376 246 -497 90 -267 115 -430 115 -735 0 -305 -25 -468 -115 -735 -41 -122
+						-174 -390 -246 -497 -215 -320 -498 -576 -833 -755 -352 -189 -802 -285 -1185
+						-253 -367 30 -644 115 -989 305 -73 39 -98 49 -135 48 -25 -1 -221 -49 -436
+						-106 -214 -58 -391 -105 -392 -104 -1 1 45 177 103 390 57 214 107 405 110
+						426 5 32 -2 51 -47 137 -202 381 -279 629 -309 999 -32 385 64 833 253 1185
+						354 662 994 1100 1737 1190 114 13 488 5 600 -14z" />
+								<path d="M1680 3932 c-74 -24 -160 -81 -238 -156 -376 -361 -358 -1062 43
+						-1665 204 -306 515 -586 825 -741 285 -143 485 -194 765 -194 150 0 182 3 270
+						26 182 47 324 127 437 246 161 171 204 331 134 489 -23 51 -57 89 -209 240
+						-106 106 -200 190 -225 202 -53 27 -173 43 -227 31 -112 -25 -171 -69 -257
+						-188 -34 -48 -62 -88 -63 -89 -4 -7 -173 40 -240 67 -289 115 -468 328 -545
+						651 -11 46 -18 83 -17 84 1 1 41 29 89 63 119 86 163 145 188 257 12 54 -4
+						174 -31 227 -12 25 -96 119 -202 225 -152 153 -189 186 -241 209 -79 36 -178
+						42 -256 16z m273 -451 c109 -110 146 -153 141 -165 -4 -9 -64 -58 -135 -108
+						-155 -110 -165 -124 -155 -242 3 -45 17 -126 30 -181 83 -337 256 -601 497
+						-759 183 -118 435 -207 635 -222 118 -10 132 0 242 155 50 71 98 131 107 135
+						12 4 55 -32 157 -131 77 -76 144 -146 150 -156 22 -41 -89 -172 -198 -233
+						-304 -170 -803 -69 -1229 250 -103 76 -295 268 -371 371 -364 486 -438 1060
+						-173 1334 42 43 124 101 143 101 6 0 77 -67 159 -149z" />
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="navigation footer__navigation footer__column">
 				<h5 class="navigation__title">Услуги</h5>
 				<ul class="navigation__list">
 					<li class="navigation__link">
@@ -222,8 +367,20 @@
 						<a href="">Международная регистрация</a>
 					</li>
 				</ul>
-			</nav>
+			</div>
+			<div class="footer__column">
+				<p class="footer__info">ООО Патентное бюро &laquo;ЖЕЛЕЗНО&raquo;</p>
+				<p class="footer__info">ИНН 4345497285</p>
+				<p class="footer__info">ОГРН 1194350012867</p>
+				<p class="footer__info confidentiality">
+					Находясь на сайте, вы принимаете политику конфиденциальности
+					 <br>
+					Пользовательское соглашение
+				</p>
+			</div>
 		</div>
 	</footer>
+
+	<script src="./script.js"></script>
 </body>
 </html>
